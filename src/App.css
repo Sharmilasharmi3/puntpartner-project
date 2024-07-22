@@ -1,0 +1,107 @@
+.App {
+  text-align: center;
+}
+.font-selector {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+
+.font-variant{
+  margin-left: 20px;
+}
+.italic-toggle {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.font-family label,
+.font-variant label,
+.italic-toggle label {
+  margin: 0;
+  font-size: 16px;
+}
+
+.font-family select,
+.font-variant select {
+  margin-left: 10px;
+}
+
+.italic-toggle {
+  justify-content: flex-end;
+}
+
+.buttons {
+  margin-left: 1100px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #1284e2;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #5096e6;
+}
+
+textarea {
+  width: 80%;
+  height: 300px;
+  margin: 20px 0;
+  font-size: 16px;
+  padding: 10px;
+}
+.switch {
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  margin-left: 10px;
+  position: relative;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 10px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #229b24;
+}
+
+input:checked + .slider:before {
+  transform: translateX(14px);
+}
